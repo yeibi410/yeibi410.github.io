@@ -1,4 +1,5 @@
 # Application release
-## used language : Javascript, html, scss
+## used language : Javascript, html, scss, css
 
-- goal : kiosk application
+- Project : kiosk application
+- Goal : Application test and release
