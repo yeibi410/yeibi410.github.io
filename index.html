@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="자판기, 음료수자판기">
+    <meta name="Author" content="Dong">
+    <link rel="shortcut icon" href="http://hpimg.gsretail.com/_ui/mobile/common/images/icon/GS25_72.png">
+    <title>GS 자판기</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="drink-box">
+            <div class="tray-box">
+                <ul class="click-event">
+                    <li class="drink-img"><img src="./images/coke.png" alt="bongbong"></li>
+                    <li><span>코카콜라</span></li>
+                    <li><span>2,100</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img"><img src="./images/cider.png" alt="cider"></li>
+                    <li><span>사이다</span></li>
+                    <li><span>2,000</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img"><img src="./images/md.png" alt="md"></li>
+                    <li><span>마운틴듀</span></li>
+                    <li><span>1,500</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img" ><img src="./images/pocari.png" alt="pocari"></li>
+                    <li><span>포카리스웨트</span></li>
+                    <li><span>1,200</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img" ><img src="./images/gatorade.png" alt="gatorade"></li>
+                    <li><span>게토레이</span></li>
+                    <li><span>1,300</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img" ><img src="./images/cocopam.png" alt="cocopam"></li>
+                    <li><span>코코팜</span></li>
+                    <li><span>1,900</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img" ><img src="./images/bongbong.png" alt="bongbong"></li>
+                    <li><span>봉봉</span></li>
+                    <li><span>1,700</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img"><img src="./images/pear.png" alt="pear"></li>
+                    <li><span>갈아만든배</span></li>
+                    <li><span>1,800</span></li>
+                </ul>
+                <ul class="click-event">
+                    <li class="drink-img"><img src="./images/trevi.png" alt="trevi"></li>
+                    <li><span>트레비</span></li>
+                    <li><span>1,000</span></li>
+                </ul>
+            </div>
+        </div> <!-- drink_wrap -->
+
+        <div class="price-list-box">
+            <div class="price-list">
+                <div class="list-title">주문 목록</div>
+                <div class="list-product">
+                    <!-- <section>
+                        <span class="product-name">포카리스웨트</span>
+                        <div class="list-count-btn" id="drink">
+                            <span id="minusBtn" class="drink-minus-btn">-</span>
+                            <span class="product-count">1</span>
+                            <span id="plusBtn" class="drink-plus-btn">+</span>
+                        </div>
+                        <div class="product-price" id="drink">
+                            <span class="product-total-price">2,100</span>
+                            <span>원</span>
+                            <span id="delBtn" class="drink-del-btn">&times;</span>
+                        </div>
+                    </section> -->
+                </div>
+                <!--가격-->
+                <div class="total-price-box">
+                    <div class="bill-total">
+                        <div><span>전체 수량</span><span class="total-count">0</span></div>
+                        <div><span>전체 가격</span><span class="total-price">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="money-box">
+            <img class="gs-icon" src="./images/GS_logo.png" alt="로고">
+            <p>Lifestyle Platform</p>
+            <div class="money-list-box">
+                <div class="money-list">50,000</div>
+                <div class="money-list">10,000</div>
+                <div class="money-list">5,000</div>
+                <div class="money-list">1,000</div>
+                <div class="money-list">500</div>
+                <div class="money-list">100</div>
+            </div>
+            <div class="payment-box">
+                <div class="payment-span">
+                    <span>지불 금액</span><span class="total-money">0</span>
+                </div>
+                <input class="totalAmount" type="hidden">
+                <input class="totalPay" type="hidden">
+                <div class="payment-btn">지불하기</div>
+                <div class="clear-btn">다시하기</div>
+            </div>
+        </div>
+        <div class="popup-bg"></div>
+        <div class="change-popup-box">
+            <div class="receipt-title">
+                <h2>영수증</h2>
+                <div><span>거스름돈</span><span class="change-money-text"></span><span>원</span></div>
+                <div><span>50,000</span><span class="chang-money"></span><span>개</span></div>
+                <div><span>10,000</span><span class="chang-money"></span><span>개</span></div>
+                <div><span>5,000</span><span class="chang-money"></span><span>개</span></div>
+                <div><span>1,000</span><span class="chang-money"></span><span>개</span></div>
+                <div><span>500</span><span class="chang-money"></span><span>개</span></div>
+                <div><span>100</span><span class="chang-money"></span><span>개</span></div>
+            </div>
+            <div class="reset-btn">다시하기</div>
+            <div class="close-btn">닫기</div>
+        </div>
+        <div class="popup-text">
+            <span>주문목록을 확인해주세요.</span>
+            <div class="reset-btn">다시하기</div>
+            <div class="close-btn">닫기</div>
+        </div>
+    </section>
+</body>
+</html>

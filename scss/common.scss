@@ -1,0 +1,45 @@
+@import "style.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-pre;
+}
+
+p {
+    font: 16px;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+ 
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #f2f2f2;
+    &:hover {
+        color: #777;
+        transition: all 0.3s;
+    }
+}
+
+
+header,
+section,
+nav,
+article,
+aside,
+footer {
+    display: block;
+}

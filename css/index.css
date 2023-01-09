@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: pretendard;
+}
+
+p {
+  font: 16px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+a:hover {
+  color: #777;
+  transition: all 0.3s;
+}
+
+header,
+section,
+nav,
+article,
+aside,
+footer {
+  display: block;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/bg.png);
+  overflow: hidden;
+}
+body .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50vw;
+  margin-left: 1%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .container .drink-box {
+  width: 30%;
+}
+body .container .drink-box .tray-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body .container .drink-box .tray-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 29%;
+  margin: 2%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+body .container .drink-box .tray-box ul img {
+  width: 100%;
+}
+body .container .price-list-box {
+  width: 27vw;
+  margin: 4vw 1vw;
+  background-image: url(../images/bill_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 20px;
+}
+body .container .price-list-box .price-list {
+  width: 80%;
+  height: 33vw;
+  margin: 5vw 2.5vw;
+  position: relative;
+}
+body .container .price-list-box .price-list .list-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8vw;
+  padding-bottom: 1vh;
+  border-bottom: 3px solid #20c1de;
+}
+body .container .price-list-box .price-list .list-product {
+  width: 100%;
+  float: left;
+}
+body .container .price-list-box .price-list .list-product section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+body .container .price-list-box .price-list .list-product section span, body .container .price-list-box .price-list .list-product section div, body .container .price-list-box .price-list .list-product section button {
+  display: block;
+  float: left;
+}
+body .container .price-list-box .price-list .list-product section .product-name {
+  width: 35%;
+}
+body .container .price-list-box .price-list .list-product section .list-count-btn {
+  width: 30%;
+  justify-content: center;
+}
+body .container .price-list-box .price-list .list-product section .list-count-btn #minusBtn, body .container .price-list-box .price-list .list-product section .list-count-btn #plusBtn {
+  width: 23%;
+  text-align: center;
+  color: #fff;
+  background-color: #f0850c;
+  cursor: pointer;
+}
+body .container .price-list-box .price-list .list-product section .list-count-btn #minusBtn:hover, body .container .price-list-box .price-list .list-product section .list-count-btn #plusBtn:hover {
+  background-color: #ffb547;
+  cursor: pointer;
+}
+body .container .price-list-box .price-list .list-product section .list-count-btn .product-count {
+  width: 25%;
+  margin: 0 3%;
+  text-align: center;
+}
+body .container .price-list-box .price-list .list-product section .product-price {
+  width: 35%;
+}
+body .container .price-list-box .price-list .list-product section .product-price .product-total-price {
+  width: 50%;
+  text-align: left;
+}
+body .container .price-list-box .price-list .list-product section .product-price span:nth-child(2) {
+  width: 22%;
+  padding-left: 1%;
+}
+body .container .price-list-box .price-list .list-product section .product-price #delBtn {
+  width: 25%;
+  margin: 0 1%;
+  text-align: center;
+  color: #fff;
+  background-color: #f0850c;
+  cursor: pointer;
+}
+body .container .price-list-box .price-list .list-product section .product-price #delBtn:hover {
+  background-color: #ffb547;
+  cursor: pointer;
+}
+body .container .price-list-box .price-list .total-price-box {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 5%;
+}
+body .container .price-list-box .price-list .total-price-box .bill-total {
+  width: 100%;
+  height: 100%;
+}
+body .container .price-list-box .price-list .total-price-box .bill-total div {
+  margin: 3%;
+  font-size: 1.5vw;
+  background-color: #907c7a;
+  color: #fff;
+  border-radius: 15px;
+}
+body .container .price-list-box .price-list .total-price-box .bill-total div span {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  line-height: 200%;
+}
+body .container .money-box {
+  position: relative;
+  width: 30%;
+  margin-right: 4%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container .money-box .gs-icon {
+  width: 80%;
+  height: 130px;
+  margin-bottom: 100px;
+}
+body .container .money-box p {
+  position: absolute;
+  top: 18%;
+  left: 14%;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #62504e;
+}
+body .container .money-box .money-list-box {
+  margin: 7% 0;
+  width: 100%;
+}
+body .container .money-box .money-list-box .money-list {
+  cursor: pointer;
+  width: 48%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin: 1%;
+  margin-top: 5%;
+  float: left;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #20c1de;
+  border-radius: 0.7vw;
+}
+body .container .money-box .money-list-box .money-list:hover {
+  color: #fff;
+  background-color: #007cff;
+  transition: background-color 0.3s;
+}
+body .container .money-box .payment-box {
+  width: 100%;
+  margin-top: 5%;
+}
+body .container .money-box .payment-box .payment-span {
+  width: 100%;
+  padding-bottom: 5%;
+}
+body .container .money-box .payment-box .payment-span span {
+  display: inline-block;
+  font-size: 2vw;
+  color: #000;
+}
+body .container .money-box .payment-box .payment-span span:first-child {
+  width: 50%;
+}
+body .container .money-box .payment-box .payment-span span:last-child {
+  width: 50%;
+}
+body .container .money-box .payment-box .payment-btn, body .container .money-box .payment-box .clear-btn {
+  float: left;
+  width: 48%;
+  height: 5vh;
+  line-height: 5vh;
+  margin: 1%;
+  font-size: 1.3vw;
+  color: #fff;
+  background-color: #62504e;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+body .container .money-box .payment-box .payment-btn:hover, body .container .money-box .payment-box .clear-btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #c0aba9;
+  transition: background-color 0.3s;
+}
+body .container .popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+}
+body .container .change-popup-box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -49%);
+  z-index: 1000;
+  width: 35rem;
+  height: 40rem;
+  padding: 2% 3%;
+  background-color: #002640;
+  border-radius: 20px;
+}
+body .container .change-popup-box .receipt-title {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 80%;
+}
+body .container .change-popup-box .receipt-title h2 {
+  font-size: 3rem;
+}
+body .container .change-popup-box .receipt-title div {
+  width: 100%;
+  height: 5%;
+  margin-top: 5%;
+  font-size: 1.5vw;
+}
+body .container .change-popup-box .receipt-title div span {
+  display: block;
+  float: left;
+}
+body .container .change-popup-box .receipt-title div span:first-child {
+  width: 40%;
+  text-align: right;
+}
+body .container .change-popup-box .receipt-title div span:nth-child(2) {
+  width: 30%;
+  text-align: center;
+}
+body .container .change-popup-box .receipt-title div span:last-child {
+  width: 30%;
+  text-align: left;
+}
+body .container .change-popup-box .receipt-title div:nth-child(2) {
+  margin: 12% 0;
+  font-size: 1.75vw;
+  color: #007cff;
+  font-size: 1.5vw;
+}
+body .container .close-btn, body .container .reset-btn {
+  width: 45%;
+  margin: 0 2.5%;
+  margin-top: 10%;
+  padding: 15px 0;
+  text-align: center;
+  float: left;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #62504e;
+  border-radius: 0.5vw;
+}
+body .container .close-btn:hover, body .container .reset-btn:hover {
+  color: #fff;
+  background-color: #c0aba9;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+body .container .popup-text {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -49%);
+  display: none;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 15px;
+  background-color: #002640;
+  z-index: 1000;
+}
+body .container .popup-text span {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+body .container .popup-text .close-btn, body .container .popup-text .reset-btn {
+  float: left;
+  margin-top: 15%;
+  height: 60px;
+}
